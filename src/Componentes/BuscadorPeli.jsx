@@ -30,9 +30,7 @@ export const BuscadorPeli = () => {
     setInexistente('');
     setBusqueda('');
     busquedaRef.current.focus();
-
     }
-    
   }
 
   const fetchPelicula = async () => {
@@ -43,7 +41,7 @@ export const BuscadorPeli = () => {
       if (data.results.length === 0) {//
         setInexistente('No se encontró la pelicula')
         setVacio('');
-        setBusqueda('');
+        setBusqueda('');      
         
         busquedaRef.current.focus();
       }
