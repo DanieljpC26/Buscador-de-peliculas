@@ -22,10 +22,15 @@ export const BuscadorPeli = () => {
       setVacio('Ingrese una pelicula')
       setInexistente('');
       busquedaRef.current.focus();
-
+      setPeliculas(data.results || [])
     }else{
     
     fetchPelicula()
+    setVacio('');
+    setInexistente('');
+    setBusqueda('');
+    busquedaRef.current.focus();
+
     }
     
   }
@@ -39,7 +44,7 @@ export const BuscadorPeli = () => {
         setInexistente('No se encontró la pelicula')
         setVacio('');
         setBusqueda('');
-      
+        
         busquedaRef.current.focus();
       }
       setPeliculas(data.results || [])
