@@ -1,0 +1,268 @@
+
+body{
+    background-color: rgb(32, 39, 46);
+    color : white;
+    padding: 2% 3%;
+
+}
+button{
+    margin: 6px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #f2e3d5;
+    font-size: 20px;
+    font-style: unset;
+    font-family: Arial, sans-serif;
+  }
+
+.input-moderno {
+  width: 500px;
+  padding: 10px 15px;
+  border: 20px solid #ccc;
+  border-radius: 60px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #ddd2d2; /* color de texto moderno */
+  background-color: #385c60; /* fondo claro moderno */ 
+  
+  
+}
+.parrafo{
+  color: #bacde3;
+}
+
+.input-moderno:focus {
+  border-color: #4f46e5; /* violeta moderno */
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+}
+.input-moderno::placeholder {
+  color: #a0aec0; /* gris claro */
+  font-style: italic;
+}
+.input-moderno:hover {
+  border-color: #7c3aed; /* violeta más claro al pasar el mouse */
+}
+.button-moderno {
+  background-color: #4036f0; /* violeta moderno */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-moderno:hover {
+  background-color: #7c3aed; /* violeta más claro al pasar el mouse */
+}
+.error-moderno {
+  color: #e53e3e; /* rojo moderno */
+  margin-top: 10px;
+  font-weight: bold;
+}
+.vacio-moderno {
+  color: #ed8936; /* naranja moderno */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #4f46e5; /* violeta */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-border {
+  background: transparent;
+  color: #4f46e5;
+  border: 2px solid #4f46e5;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease;
+}
+.btn-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #4f46e5;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+.btn-border:hover {
+  color: white;
+}
+
+/* Estilos generales */
+
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .movie-card p {
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    button {
+      padding: 8px 16px;
+    }
+  
+   
+  
+    .movie-card h2 {
+      font-size: 16px;
+    }
+  }
+  .card-motiva {
+  background: rgba(20, 40, 80, 0.92);
+  border-radius: 20px;
+  box-shadow: 0 0 32px 0 #00c6ff88, 0 0 8px 2px #00ffea99 inset;
+  padding: 2.2rem 1.7rem;
+  margin-top: 2.2rem;
+  max-width: 420px;
+  width: 95vw;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 2px solid #00c6ff;
+  animation: led-glow 2.2s infinite alternate;
+}
+
+/* Contenedor principal */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  background-color: #041d2f; /* fondo oscuro estilo Netflix */
+}
+
+/* Cada tarjeta */
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Imagen */
+.movie-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.movie-card:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Título sobre la imagen */
+.movie-card h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar título al pasar el mouse */
+.movie-card:hover h3 {
+  opacity: 1;
+}
+
+  
